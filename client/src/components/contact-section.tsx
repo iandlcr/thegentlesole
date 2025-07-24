@@ -245,13 +245,11 @@ export default function ContactSection() {
                               </SelectTrigger>
                             </FormControl>
                             <SelectContent>
-                              <SelectItem value="full-assessment">Full Assessment from below the knee to the foot</SelectItem>
                               <SelectItem value="nail-trimming">Nail Trimming & Filing</SelectItem>
                               <SelectItem value="corn-callus">Corn & Callus reduction</SelectItem>
                               <SelectItem value="diabetic-care">Diabetic foot care</SelectItem>
                               <SelectItem value="moisturizing-massage">Moisturizing and gentle massage</SelectItem>
                               <SelectItem value="ingrown-removal">Temporary Ingrown Removal</SelectItem>
-                              <SelectItem value="referrals">Referrals if needed to podiatrist</SelectItem>
                               <SelectItem value="general-consultation">General Consultation</SelectItem>
                             </SelectContent>
                           </Select>
