@@ -20,17 +20,10 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="home" className="pt-20 organic-shapes min-h-screen flex items-center">
+    <section id="home" className="pt-20 min-h-screen flex items-center bg-brand-cream">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
-            <div className="flex justify-center lg:justify-start mb-8">
-              <img 
-                src={logoImage} 
-                alt="The Gentle Sole Logo" 
-                className="h-32 w-32 lg:h-40 lg:w-40"
-              />
-            </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold brand-dark-blue leading-tight mb-6">
               Professional <span className="brand-coral">Footcare</span>{" "}
               <span className="brand-soft-green">Nursing</span> Services
@@ -60,9 +53,9 @@ export default function HeroSection() {
           </div>
           <div className="text-center">
             <img 
-              src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
-              alt="Professional healthcare worker providing gentle foot care services" 
-              className="rounded-2xl shadow-2xl w-full max-w-lg mx-auto" 
+              src={logoImage} 
+              alt="The Gentle Sole Logo" 
+              className="rounded-3xl shadow-2xl w-full max-w-lg mx-auto"
             />
           </div>
         </div>

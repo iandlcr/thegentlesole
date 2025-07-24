@@ -1,47 +1,54 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Scissors, Hand, Heart, Sparkles, Search, UserCheck, Info } from "lucide-react";
+import { Scissors, Hand, Heart, Sparkles, Search, UserCheck, Stethoscope, Info } from "lucide-react";
 
 const services = [
+  {
+    icon: Search,
+    title: "Full Assessment from below the knee to the foot",
+    description: "Comprehensive evaluation of your foot health, identifying potential issues and assessing overall foot condition.",
+    bgColor: "bg-brand-grey-blue",
+    iconColor: "text-white"
+  },
   {
     icon: Scissors,
     title: "Nail Trimming & Filing",
     description: "Professional nail care including precise trimming and filing to maintain healthy nail growth and prevent issues.",
-    bgColor: "bg-brand-grey-blue",
-    iconColor: "brand-dark-blue"
-  },
-  {
-    icon: Hand,
-    title: "Corn & Callus Reduction",
-    description: "Safe removal and reduction of corns and calluses to relieve discomfort and prevent complications.",
     bgColor: "bg-brand-soft-green",
     iconColor: "text-white"
   },
   {
-    icon: Heart,
-    title: "Diabetic Foot Care",
-    description: "Specialized care for diabetic patients focusing on prevention and early detection of foot complications.",
+    icon: Hand,
+    title: "Corn & Callus reduction",
+    description: "Safe removal and reduction of corns and calluses to relieve discomfort and prevent complications.",
     bgColor: "bg-brand-coral",
     iconColor: "text-white"
   },
   {
-    icon: Sparkles,
-    title: "Moisturizing & Gentle Massage",
-    description: "Therapeutic moisturizing treatments and gentle massage to improve circulation and skin health.",
+    icon: Heart,
+    title: "Diabetic foot care",
+    description: "Specialized care for diabetic patients focusing on prevention and early detection of foot complications.",
     bgColor: "bg-brand-peach",
     iconColor: "text-white"
   },
   {
-    icon: Search,
-    title: "Full Assessment",
-    description: "Comprehensive assessment from below the knee to the foot, identifying potential issues and health concerns.",
+    icon: Sparkles,
+    title: "Moisturizing and gentle massage",
+    description: "Therapeutic moisturizing treatments and gentle massage to improve circulation and skin health.",
     bgColor: "bg-brand-grey-blue",
-    iconColor: "brand-dark-blue"
+    iconColor: "text-white"
   },
   {
     icon: UserCheck,
-    title: "Referrals & Temporary Ingrown Removal",
-    description: "Professional referrals to podiatrists when needed and temporary ingrown toenail relief services.",
+    title: "Temporary Ingrown Removal",
+    description: "Professional temporary relief for ingrown toenails to reduce pain and prevent infection.",
     bgColor: "bg-brand-soft-green",
+    iconColor: "text-white"
+  },
+  {
+    icon: Stethoscope,
+    title: "Referrals if needed to podiatrist",
+    description: "Professional referrals to podiatrists when specialized medical intervention is required for optimal foot health.",
+    bgColor: "bg-brand-coral",
     iconColor: "text-white"
   }
 ];

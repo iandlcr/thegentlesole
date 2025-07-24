@@ -2,12 +2,12 @@ import { Tag, Home, Heart, Users } from "lucide-react";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20" style={{ backgroundColor: '#B5907A' }}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">About The Gentle Sole</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Dedicated to providing exceptional footcare nursing services with compassion, precision, and holistic care
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Hi, Hello!</h2>
+          <p className="text-xl text-white/90 max-w-3xl mx-auto">
+            Meet Mary Rose Dula, your certified footcare nursing professional
           </p>
         </div>
         
@@ -20,16 +20,12 @@ export default function AboutSection() {
             />
           </div>
           <div>
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Certified Footcare Nurse</h3>
-            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              As a dedicated Footcare Nurse, I bring compassion, precision, and a love for holistic care 
-              to every client I serve. From preventative care to specialized foot health support, 
-              my mission is to keep you confidently and comfortably on your feet.
+            <h3 className="text-2xl font-bold text-white mb-6">Mary Rose Dula - Certified Footcare Nurse</h3>
+            <p className="text-lg text-white/95 mb-6 leading-relaxed">
+              "Hi There! my name is Mary Rose Dula, and I'm a Foot Care Nurse Certified. I specialize in providing preventive and therapeutic foot care, especially for individuals with diabetes, circulation issues, or other chronic conditions. My goal is to help you maintain healthy feet, prevent complications, and improve your overall well-being to all ages."
             </p>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              I offer professional footcare services to clients of all ages in the comfort of their own homes, 
-              as well as in nursing homes, retirement homes, senior facilities, and hospitals throughout 
-              the Windsor-Essex region.
+            <p className="text-lg text-white/95 mb-8 leading-relaxed">
+              "I'm here to support you with compassionate, expert care—please don't hesitate to ask any questions."
             </p>
             
             <div className="grid sm:grid-cols-2 gap-6">
