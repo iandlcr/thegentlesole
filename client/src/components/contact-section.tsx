@@ -78,7 +78,7 @@ export default function ContactSection() {
   return (
     <section id="contact" className="py-20 bg-brand-cream">
       {/* Hidden form for Netlify Forms detection */}
-      <form name="contact" netlify-honeypot="bot-field" data-netlify="true" hidden action="/.netlify/forms/contact">
+      <form name="contact" netlify-honeypot="bot-field" data-netlify="true" hidden>
         <input type="text" name="firstName" />
         <input type="text" name="lastName" />
         <input type="email" name="email" />
@@ -193,7 +193,15 @@ export default function ContactSection() {
                 </div>
               ) : (
                 <Form {...form}>
-                  <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                  <form
+                    name="contact"
+                    method="POST"
+                    data-netlify="true"
+                    netlify-honeypot="bot-field"
+                    onSubmit={form.handleSubmit(onSubmit)}
+                    className="space-y-6"
+                  >
+                    <input type="hidden" name="form-name" value="contact" />
                     <div className="grid sm:grid-cols-2 gap-6">
                       <FormField
                         control={form.control}
