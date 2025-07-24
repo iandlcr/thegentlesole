@@ -1,4 +1,4 @@
-import { Leaf } from "lucide-react";
+import logoImage from "@assets/footcare_expert_windsor_1753386475777.png";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -18,12 +18,16 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-brand-dark-blue text-white py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <h3 className="text-2xl font-bold mb-4 flex items-center">
-              <Leaf className="text-accent mr-2" size={24} />
+              <img 
+                src={logoImage} 
+                alt="The Gentle Sole Logo" 
+                className="h-8 w-8 mr-3"
+              />
               The Gentle Sole
             </h3>
             <p className="text-gray-300 mb-4 max-w-md">

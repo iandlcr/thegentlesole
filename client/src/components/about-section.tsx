@@ -34,38 +34,38 @@ export default function AboutSection() {
             
             <div className="grid sm:grid-cols-2 gap-6">
               <div className="flex items-center">
-                <div className="bg-blue-100 p-3 rounded-lg mr-4">
-                  <Tag className="text-primary" size={24} />
+                <div className="bg-brand-grey-blue p-3 rounded-lg mr-4">
+                  <Tag className="brand-dark-blue" size={24} />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">Certified Professional</h4>
+                  <h4 className="font-semibold brand-dark-blue">Certified Professional</h4>
                   <p className="text-gray-600">Licensed footcare nurse</p>
                 </div>
               </div>
               <div className="flex items-center">
-                <div className="bg-green-100 p-3 rounded-lg mr-4">
-                  <Home className="text-accent" size={24} />
+                <div className="bg-brand-soft-green p-3 rounded-lg mr-4">
+                  <Home className="text-white" size={24} />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">In-Home Service</h4>
+                  <h4 className="font-semibold brand-dark-blue">In-Home Service</h4>
                   <p className="text-gray-600">Convenient mobile care</p>
                 </div>
               </div>
               <div className="flex items-center">
-                <div className="bg-blue-100 p-3 rounded-lg mr-4">
-                  <Heart className="text-primary" size={24} />
+                <div className="bg-brand-peach p-3 rounded-lg mr-4">
+                  <Heart className="text-white" size={24} />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">Compassionate Care</h4>
+                  <h4 className="font-semibold brand-dark-blue">Compassionate Care</h4>
                   <p className="text-gray-600">Patient-centered approach</p>
                 </div>
               </div>
               <div className="flex items-center">
-                <div className="bg-green-100 p-3 rounded-lg mr-4">
-                  <Users className="text-accent" size={24} />
+                <div className="bg-brand-coral p-3 rounded-lg mr-4">
+                  <Users className="text-white" size={24} />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">All Ages Welcome</h4>
+                  <h4 className="font-semibold brand-dark-blue">All Ages Welcome</h4>
                   <p className="text-gray-600">From young to seniors</p>
                 </div>
               </div>

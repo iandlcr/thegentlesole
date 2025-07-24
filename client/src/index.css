@@ -3,48 +3,58 @@
 @tailwind utilities;
 
 :root {
-  --background: hsl(0, 0%, 100%);
-  --foreground: hsl(215, 25%, 15%);
-  --muted: hsl(210, 20%, 96%);
-  --muted-foreground: hsl(215, 12%, 48%);
-  --popover: hsl(0, 0%, 100%);
-  --popover-foreground: hsl(215, 25%, 15%);
+  /* The Gentle Sole Brand Colors */
+  --cream-background: #F8F2E8;
+  --dark-blue: #1C2E3B;
+  --coral-pink: #ED7084;
+  --soft-green: #A2CCB8;
+  --soft-peach: #F8B6AB;
+  --soft-grey-blue: #C8D7DC;
+  
+  /* Shadcn UI Variables mapped to brand colors */
+  --background: #F8F2E8;
+  --foreground: #1C2E3B;
+  --muted: #C8D7DC;
+  --muted-foreground: hsl(210, 15%, 45%);
+  --popover: #F8F2E8;
+  --popover-foreground: #1C2E3B;
   --card: hsl(0, 0%, 100%);
-  --card-foreground: hsl(215, 25%, 15%);
-  --border: hsl(210, 15%, 88%);
-  --input: hsl(210, 15%, 88%);
-  --primary: hsl(200, 85%, 35%);
-  --primary-foreground: hsl(0, 0%, 100%);
-  --secondary: hsl(150, 25%, 95%);
-  --secondary-foreground: hsl(215, 25%, 15%);
-  --accent: hsl(155, 50%, 45%);
-  --accent-foreground: hsl(0, 0%, 100%);
-  --destructive: hsl(0, 75%, 55%);
-  --destructive-foreground: hsl(0, 0%, 100%);
-  --ring: hsl(200, 85%, 35%);
+  --card-foreground: #1C2E3B;
+  --border: #C8D7DC;
+  --input: hsl(0, 0%, 100%);
+  --primary: #1C2E3B;
+  --primary-foreground: #F8F2E8;
+  --secondary: #A2CCB8;
+  --secondary-foreground: #1C2E3B;
+  --accent: #ED7084;
+  --accent-foreground: #F8F2E8;
+  --destructive: #ED7084;
+  --destructive-foreground: #F8F2E8;
+  --ring: #ED7084;
   --radius: 0.5rem;
 }
 
 .dark {
-  --background: hsl(224, 71.4%, 4.1%);
-  --foreground: hsl(210, 40%, 98%);
-  --muted: hsl(223, 47%, 11%);
-  --muted-foreground: hsl(215.4, 16.3%, 56.9%);
-  --popover: hsl(224, 71.4%, 4.1%);
-  --popover-foreground: hsl(210, 40%, 98%);
-  --card: hsl(224, 71.4%, 4.1%);
-  --card-foreground: hsl(210, 40%, 98%);
-  --border: hsl(215, 27.9%, 16.9%);
-  --input: hsl(215, 27.9%, 16.9%);
-  --primary: hsl(217, 91%, 60%);
-  --primary-foreground: hsl(222.2, 84%, 4.9%);
-  --secondary: hsl(222.2, 84%, 4.9%);
-  --secondary-foreground: hsl(210, 40%, 98%);
-  --accent: hsl(158, 64%, 52%);
-  --accent-foreground: hsl(222.2, 84%, 4.9%);
-  --destructive: hsl(0, 62.8%, 30.6%);
-  --destructive-foreground: hsl(210, 40%, 98%);
-  --ring: hsl(217, 91%, 60%);
+  /* Dark theme using brand colors */
+  --background: #1C2E3B;
+  --foreground: #F8F2E8;
+  --muted: #A2CCB8;
+  --muted-foreground: #C8D7DC;
+  --popover: #1C2E3B;
+  --popover-foreground: #F8F2E8;
+  --card: #1C2E3B;
+  --card-foreground: #F8F2E8;
+  --border: #A2CCB8;
+  --input: #A2CCB8;
+  --primary: #F8F2E8;
+  --primary-foreground: #1C2E3B;
+  --secondary: #A2CCB8;
+  --secondary-foreground: #1C2E3B;
+  --accent: #ED7084;
+  --accent-foreground: #1C2E3B;
+  --destructive: #ED7084;
+  --destructive-foreground: #F8F2E8;
+  --ring: #ED7084;
 }
 
 @layer base {
@@ -60,16 +70,61 @@
 
 /* Custom styles for The Gentle Sole brand */
 .gradient-primary {
-  background: linear-gradient(135deg, hsl(217, 91%, 60%) 0%, hsl(158, 64%, 52%) 100%);
+  background: linear-gradient(135deg, #1C2E3B 0%, #A2CCB8 100%);
 }
 
 .gradient-accent {
-  background: linear-gradient(135deg, hsl(158, 64%, 52%) 0%, hsl(217, 91%, 60%) 100%);
+  background: linear-gradient(135deg, #ED7084 0%, #F8B6AB 100%);
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, hsl(217, 91%, 60%) 0%, hsl(158, 64%, 52%) 100%);
+  background: linear-gradient(135deg, #1C2E3B 0%, #ED7084 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.brand-coral {
+  color: #ED7084;
+}
+
+.brand-dark-blue {
+  color: #1C2E3B;
+}
+
+.brand-soft-green {
+  color: #A2CCB8;
+}
+
+.brand-cream {
+  color: #F8F2E8;
+  background-color: #F8F2E8;
+}
+
+.bg-brand-coral {
+  background-color: #ED7084;
+}
+
+.bg-brand-dark-blue {
+  background-color: #1C2E3B;
+}
+
+.bg-brand-soft-green {
+  background-color: #A2CCB8;
+}
+
+.bg-brand-peach {
+  background-color: #F8B6AB;
+}
+
+.bg-brand-grey-blue {
+  background-color: #C8D7DC;
+}
+
+/* Organic shapes background */
+.organic-shapes {
+  background-image: 
+    radial-gradient(ellipse 300px 200px at 80% 20%, #F8B6AB 0%, transparent 50%),
+    radial-gradient(ellipse 400px 300px at 20% 80%, #A2CCB8 0%, transparent 50%),
+    radial-gradient(ellipse 250px 150px at 60% 60%, #C8D7DC 0%, transparent 50%);
 }

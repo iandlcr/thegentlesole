@@ -6,43 +6,43 @@ const services = [
     icon: Scissors,
     title: "Nail Trimming & Filing",
     description: "Professional nail care including precise trimming and filing to maintain healthy nail growth and prevent issues.",
-    bgColor: "bg-blue-100",
-    iconColor: "text-primary"
+    bgColor: "bg-brand-grey-blue",
+    iconColor: "brand-dark-blue"
   },
   {
     icon: Hand,
     title: "Corn & Callus Reduction",
     description: "Safe removal and reduction of corns and calluses to relieve discomfort and prevent complications.",
-    bgColor: "bg-green-100",
-    iconColor: "text-accent"
+    bgColor: "bg-brand-soft-green",
+    iconColor: "text-white"
   },
   {
     icon: Heart,
     title: "Diabetic Foot Care",
     description: "Specialized care for diabetic patients focusing on prevention and early detection of foot complications.",
-    bgColor: "bg-red-100",
-    iconColor: "text-red-600"
+    bgColor: "bg-brand-coral",
+    iconColor: "text-white"
   },
   {
     icon: Sparkles,
     title: "Moisturizing & Gentle Massage",
     description: "Therapeutic moisturizing treatments and gentle massage to improve circulation and skin health.",
-    bgColor: "bg-green-100",
-    iconColor: "text-green-600"
+    bgColor: "bg-brand-peach",
+    iconColor: "text-white"
   },
   {
     icon: Search,
     title: "Full Assessment",
     description: "Comprehensive assessment from below the knee to the foot, identifying potential issues and health concerns.",
-    bgColor: "bg-blue-100",
-    iconColor: "text-blue-600"
+    bgColor: "bg-brand-grey-blue",
+    iconColor: "brand-dark-blue"
   },
   {
     icon: UserCheck,
     title: "Referrals & Temporary Ingrown Removal",
     description: "Professional referrals to podiatrists when needed and temporary ingrown toenail relief services.",
-    bgColor: "bg-purple-100",
-    iconColor: "text-purple-600"
+    bgColor: "bg-brand-soft-green",
+    iconColor: "text-white"
   }
 ];
 
@@ -79,20 +79,20 @@ export default function ServicesSection() {
         </div>
         
         <div className="mt-16 text-center">
-          <div className="bg-blue-50 rounded-2xl p-8 max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">Service Locations</h3>
-            <p className="text-lg text-gray-600 mb-6">
+          <div className="bg-brand-grey-blue rounded-2xl p-8 max-w-4xl mx-auto">
+            <h3 className="text-2xl font-bold brand-dark-blue mb-4">Service Locations</h3>
+            <p className="text-lg text-gray-700 mb-6">
               We provide mobile footcare services throughout the Windsor-Essex region
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               {serviceLocations.map((location) => (
-                <span key={location} className="bg-white px-4 py-2 rounded-lg text-gray-700 font-medium">
+                <span key={location} className="bg-white px-4 py-2 rounded-lg brand-dark-blue font-medium">
                   {location}
                 </span>
               ))}
             </div>
-            <p className="text-sm text-gray-600 mt-4 flex items-center justify-center">
-              <Info className="mr-2" size={16} />
+            <p className="text-sm text-gray-700 mt-4 flex items-center justify-center">
+              <Info className="mr-2 brand-coral" size={16} />
               Additional $5 travel fee applies for in-home visits
             </p>
           </div>

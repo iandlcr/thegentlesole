@@ -13,64 +13,64 @@ export default function PricingSection() {
         </div>
         
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <Card className="bg-blue-50 border-2 border-blue-200">
+          <Card className="bg-brand-grey-blue border-2 border-brand-dark-blue">
             <CardContent className="p-8">
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-primary mb-2">Initial Assessment</h3>
-                <div className="text-5xl font-bold text-primary mb-2">$65</div>
-                <p className="text-primary mb-6">1 hour comprehensive assessment</p>
+                <h3 className="text-2xl font-bold brand-dark-blue mb-2">Initial Assessment</h3>
+                <div className="text-5xl font-bold brand-dark-blue mb-2">$65</div>
+                <p className="brand-dark-blue mb-6">1 hour comprehensive assessment</p>
                 <ul className="text-left space-y-3 mb-8">
                   <li className="flex items-center">
-                    <Check className="text-primary mr-3" size={20} />
+                    <Check className="brand-coral mr-3" size={20} />
                     Complete foot health evaluation
                   </li>
                   <li className="flex items-center">
-                    <Check className="text-primary mr-3" size={20} />
+                    <Check className="brand-coral mr-3" size={20} />
                     Assessment from knee to foot
                   </li>
                   <li className="flex items-center">
-                    <Check className="text-primary mr-3" size={20} />
+                    <Check className="brand-coral mr-3" size={20} />
                     Personalized care plan
                   </li>
                   <li className="flex items-center">
-                    <Check className="text-primary mr-3" size={20} />
+                    <Check className="brand-coral mr-3" size={20} />
                     Health recommendations
                   </li>
                 </ul>
                 <p className="text-sm text-gray-600 flex items-center justify-center">
-                  <Shield className="text-primary mr-1" size={16} />
+                  <Shield className="brand-dark-blue mr-1" size={16} />
                   With or without insurance
                 </p>
               </div>
             </CardContent>
           </Card>
           
-          <Card className="bg-green-50 border-2 border-green-200">
+          <Card className="bg-brand-peach border-2 border-brand-soft-green">
             <CardContent className="p-8">
               <div className="text-center">
-                <h3 className="text-2xl font-bold text-accent mb-2">Routine Care</h3>
-                <div className="text-5xl font-bold text-accent mb-2">$55</div>
-                <p className="text-accent mb-6">45 minute maintenance visit</p>
+                <h3 className="text-2xl font-bold brand-dark-blue mb-2">Routine Care</h3>
+                <div className="text-5xl font-bold brand-dark-blue mb-2">$55</div>
+                <p className="brand-dark-blue mb-6">45 minute maintenance visit</p>
                 <ul className="text-left space-y-3 mb-8">
                   <li className="flex items-center">
-                    <Check className="text-accent mr-3" size={20} />
+                    <Check className="brand-soft-green mr-3" size={20} />
                     Nail trimming and filing
                   </li>
                   <li className="flex items-center">
-                    <Check className="text-accent mr-3" size={20} />
+                    <Check className="brand-soft-green mr-3" size={20} />
                     Corn and callus care
                   </li>
                   <li className="flex items-center">
-                    <Check className="text-accent mr-3" size={20} />
+                    <Check className="brand-soft-green mr-3" size={20} />
                     Moisturizing treatment
                   </li>
                   <li className="flex items-center">
-                    <Check className="text-accent mr-3" size={20} />
+                    <Check className="brand-soft-green mr-3" size={20} />
                     Health monitoring
                   </li>
                 </ul>
                 <p className="text-sm text-gray-600 flex items-center justify-center">
-                  <Shield className="text-accent mr-1" size={16} />
+                  <Shield className="brand-dark-blue mr-1" size={16} />
                   With or without insurance
                 </p>
               </div>
@@ -79,24 +79,24 @@ export default function PricingSection() {
         </div>
         
         <div className="mt-12 text-center">
-          <div className="bg-gray-50 rounded-xl p-6 max-w-2xl mx-auto">
-            <h4 className="text-lg font-semibold text-gray-900 mb-4">Follow-up Schedule</h4>
+          <div className="bg-brand-cream rounded-xl p-6 max-w-2xl mx-auto">
+            <h4 className="text-lg font-semibold brand-dark-blue mb-4">Follow-up Schedule</h4>
             <div className="grid sm:grid-cols-3 gap-4 text-center">
               <div>
                 <div className="bg-white p-4 rounded-lg">
-                  <div className="text-2xl font-bold text-primary">4</div>
+                  <div className="text-2xl font-bold brand-coral">4</div>
                   <div className="text-sm text-gray-600">weeks</div>
                 </div>
               </div>
               <div>
                 <div className="bg-white p-4 rounded-lg">
-                  <div className="text-2xl font-bold text-primary">6</div>
+                  <div className="text-2xl font-bold brand-coral">6</div>
                   <div className="text-sm text-gray-600">weeks</div>
                 </div>
               </div>
               <div>
                 <div className="bg-white p-4 rounded-lg">
-                  <div className="text-2xl font-bold text-primary">8</div>
+                  <div className="text-2xl font-bold brand-coral">8</div>
                   <div className="text-sm text-gray-600">weeks</div>
                 </div>
               </div>
