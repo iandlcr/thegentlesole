@@ -2,11 +2,11 @@ import { Tag, Home, Heart, Users } from "lucide-react";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-20" style={{ backgroundColor: '#B5907A' }}>
+    <section id="about" className="py-20 bg-brand-cream">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Hi, Hello!</h2>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Hi, Hello!</h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Meet Mary Rose Dula, your certified footcare nursing professional
           </p>
         </div>
@@ -20,11 +20,11 @@ export default function AboutSection() {
             />
           </div>
           <div>
-            <h3 className="text-2xl font-bold text-white mb-6">Mary Rose Dula - Certified Footcare Nurse</h3>
-            <p className="text-lg text-white/95 mb-6 leading-relaxed">
+            <h3 className="text-2xl font-bold text-gray-900 mb-6">Mary Rose Dula - Certified Footcare Nurse</h3>
+            <p className="text-lg text-gray-600 mb-6 leading-relaxed">
               "Hi There! my name is Mary Rose Dula, and I'm a Foot Care Nurse Certified. I specialize in providing preventive and therapeutic foot care, especially for individuals with diabetes, circulation issues, or other chronic conditions. My goal is to help you maintain healthy feet, prevent complications, and improve your overall well-being to all ages."
             </p>
-            <p className="text-lg text-white/95 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
               "I'm here to support you with compassionate, expert care—please don't hesitate to ask any questions."
             </p>
             
