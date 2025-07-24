@@ -78,7 +78,7 @@ export default function ContactSection() {
   return (
     <section id="contact" className="py-20 bg-brand-cream">
       {/* Hidden form for Netlify Forms detection */}
-      <form name="contact" netlify-honeypot="bot-field" data-netlify="true" hidden>
+      <form name="contact" netlify-honeypot="bot-field" data-netlify="true" hidden action="/">
         <input type="text" name="firstName" />
         <input type="text" name="lastName" />
         <input type="email" name="email" />
