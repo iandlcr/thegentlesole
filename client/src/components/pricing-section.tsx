@@ -1,0 +1,112 @@
+import { Card, CardContent } from "@/components/ui/card";
+import { Check, Shield } from "lucide-react";
+
+export default function PricingSection() {
+  return (
+    <section id="pricing" className="py-20 bg-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Transparent Pricing</h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Fair, straightforward pricing for professional footcare services. Insurance accepted.
+          </p>
+        </div>
+        
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <Card className="bg-blue-50 border-2 border-blue-200">
+            <CardContent className="p-8">
+              <div className="text-center">
+                <h3 className="text-2xl font-bold text-primary mb-2">Initial Assessment</h3>
+                <div className="text-5xl font-bold text-primary mb-2">$65</div>
+                <p className="text-primary mb-6">1 hour comprehensive assessment</p>
+                <ul className="text-left space-y-3 mb-8">
+                  <li className="flex items-center">
+                    <Check className="text-primary mr-3" size={20} />
+                    Complete foot health evaluation
+                  </li>
+                  <li className="flex items-center">
+                    <Check className="text-primary mr-3" size={20} />
+                    Assessment from knee to foot
+                  </li>
+                  <li className="flex items-center">
+                    <Check className="text-primary mr-3" size={20} />
+                    Personalized care plan
+                  </li>
+                  <li className="flex items-center">
+                    <Check className="text-primary mr-3" size={20} />
+                    Health recommendations
+                  </li>
+                </ul>
+                <p className="text-sm text-gray-600 flex items-center justify-center">
+                  <Shield className="text-primary mr-1" size={16} />
+                  With or without insurance
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+          
+          <Card className="bg-green-50 border-2 border-green-200">
+            <CardContent className="p-8">
+              <div className="text-center">
+                <h3 className="text-2xl font-bold text-accent mb-2">Routine Care</h3>
+                <div className="text-5xl font-bold text-accent mb-2">$55</div>
+                <p className="text-accent mb-6">45 minute maintenance visit</p>
+                <ul className="text-left space-y-3 mb-8">
+                  <li className="flex items-center">
+                    <Check className="text-accent mr-3" size={20} />
+                    Nail trimming and filing
+                  </li>
+                  <li className="flex items-center">
+                    <Check className="text-accent mr-3" size={20} />
+                    Corn and callus care
+                  </li>
+                  <li className="flex items-center">
+                    <Check className="text-accent mr-3" size={20} />
+                    Moisturizing treatment
+                  </li>
+                  <li className="flex items-center">
+                    <Check className="text-accent mr-3" size={20} />
+                    Health monitoring
+                  </li>
+                </ul>
+                <p className="text-sm text-gray-600 flex items-center justify-center">
+                  <Shield className="text-accent mr-1" size={16} />
+                  With or without insurance
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+        
+        <div className="mt-12 text-center">
+          <div className="bg-gray-50 rounded-xl p-6 max-w-2xl mx-auto">
+            <h4 className="text-lg font-semibold text-gray-900 mb-4">Follow-up Schedule</h4>
+            <div className="grid sm:grid-cols-3 gap-4 text-center">
+              <div>
+                <div className="bg-white p-4 rounded-lg">
+                  <div className="text-2xl font-bold text-primary">4</div>
+                  <div className="text-sm text-gray-600">weeks</div>
+                </div>
+              </div>
+              <div>
+                <div className="bg-white p-4 rounded-lg">
+                  <div className="text-2xl font-bold text-primary">6</div>
+                  <div className="text-sm text-gray-600">weeks</div>
+                </div>
+              </div>
+              <div>
+                <div className="bg-white p-4 rounded-lg">
+                  <div className="text-2xl font-bold text-primary">8</div>
+                  <div className="text-sm text-gray-600">weeks</div>
+                </div>
+              </div>
+            </div>
+            <p className="text-sm text-gray-600 mt-4">
+              Recommended follow-up intervals for optimal foot health
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
