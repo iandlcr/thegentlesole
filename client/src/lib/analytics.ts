@@ -1,4 +1,6 @@
-// Define the gtag function globally
+// Google Analytics integration - placeholder for future implementation
+// To implement: Add VITE_GA_MEASUREMENT_ID to environment variables
+
 declare global {
   interface Window {
     dataLayer: any[];
@@ -6,16 +8,15 @@ declare global {
   }
 }
 
-// Initialize Google Analytics
 export const initGA = () => {
   const measurementId = import.meta.env.VITE_GA_MEASUREMENT_ID;
 
   if (!measurementId) {
-    console.warn('Missing required Google Analytics key: VITE_GA_MEASUREMENT_ID');
+    console.warn('Google Analytics not configured. Add VITE_GA_MEASUREMENT_ID to enable tracking.');
     return;
   }
 
-  // Add Google Analytics script to the head
+  // Add Google Analytics script
   const script1 = document.createElement('script');
   script1.async = true;
   script1.src = `https://www.googletagmanager.com/gtag/js?id=${measurementId}`;
@@ -32,7 +33,6 @@ export const initGA = () => {
   document.head.appendChild(script2);
 };
 
-// Track page views - useful for single-page applications
 export const trackPageView = (url: string) => {
   if (typeof window === 'undefined' || !window.gtag) return;
   
@@ -44,7 +44,6 @@ export const trackPageView = (url: string) => {
   });
 };
 
-// Track events
 export const trackEvent = (
   action: string, 
   category?: string, 

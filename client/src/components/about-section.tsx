@@ -22,7 +22,7 @@ export default function AboutSection() {
           <div>
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Mary Rose Dula - Certified Footcare Nurse</h3>
             <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-              "Hi There! my name is Mary Rose Dula, and I'm a Foot Care Nurse Certified. I specialize in providing preventive and therapeutic foot care, especially for individuals with diabetes, circulation issues, or other chronic conditions. My goal is to help you maintain healthy feet, prevent complications, and improve your overall well-being to all ages."
+              "Hi There! my name is Mary Rose Dula, and I'm a Certified Foot Care Nurse. I specialize in providing preventive and therapeutic foot care, especially for individuals with diabetes, circulation issues, or other chronic conditions. My goal is to help you maintain healthy feet, prevent complications, and improve your overall well-being to all ages."
             </p>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
               "I'm here to support you with compassionate, expert care—please don't hesitate to ask any questions."

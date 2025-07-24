@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "./ui/button";
 import { CalendarCheck, Info } from "lucide-react";
 import logoImage from "@assets/footcare_expert_windsor_1753386475777.png";
 
