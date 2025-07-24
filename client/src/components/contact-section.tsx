@@ -40,34 +40,56 @@ export default function ContactSection() {
     }
   });
 
-  const submitContactForm = useMutation({
-    mutationFn: async (data: z.infer<typeof formSchema>) => {
-      const response = await apiRequest("POST", "/api/contact", data);
-      return response.json();
-    },
-    onSuccess: (data) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const encode = (data: any) => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+  };
+
+  const onSubmit = async (data: z.infer<typeof formSchema>) => {
+    setIsSubmitting(true);
+    
+    try {
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({
+          "form-name": "contact",
+          ...data
+        })
+      });
+      
       toast({
         title: "Message Sent Successfully!",
-        description: data.message || "Thank you for your message! We will get back to you soon.",
+        description: "Thank you for your message! We will get back to you soon.",
       });
       form.reset();
       setIsSubmitted(true);
-    },
-    onError: (error: any) => {
+    } catch (error) {
       toast({
         title: "Error Sending Message",
-        description: error.message || "An error occurred while sending your message. Please try again.",
+        description: "An error occurred while sending your message. Please try again.",
         variant: "destructive",
       });
+    } finally {
+      setIsSubmitting(false);
     }
-  });
-
-  const onSubmit = (data: z.infer<typeof formSchema>) => {
-    submitContactForm.mutate(data);
   };
 
   return (
     <section id="contact" className="py-20 bg-brand-cream">
+      {/* Hidden form for Netlify Forms detection */}
+      <form name="contact" netlify-honeypot="bot-field" data-netlify="true" hidden>
+        <input type="text" name="firstName" />
+        <input type="text" name="lastName" />
+        <input type="email" name="email" />
+        <input type="tel" name="phone" />
+        <input type="text" name="serviceType" />
+        <textarea name="message"></textarea>
+      </form>
+      
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
@@ -279,9 +301,9 @@ export default function ContactSection() {
                     <Button 
                       type="submit" 
                       className="w-full bg-brand-dark-blue hover:bg-brand-dark-blue/90 text-white"
-                      disabled={submitContactForm.isPending}
+                      disabled={isSubmitting}
                     >
-                      {submitContactForm.isPending ? (
+                      {isSubmitting ? (
                         "Sending..."
                       ) : (
                         <>
