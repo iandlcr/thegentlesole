@@ -23,7 +23,7 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="bg-brand-cream shadow-sm fixed w-full top-0 z-50">
+    <nav className="shadow-sm fixed w-full top-0 z-50" style={{ backgroundColor: '#F8F2E8' }}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
