@@ -11,7 +11,7 @@ export default function PricingSection() {
             Fair, straightforward pricing for professional footcare services. Insurance accepted.
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <Card className="bg-brand-grey-blue border-2 border-brand-dark-blue">
             <CardContent className="p-8">
@@ -37,11 +37,11 @@ export default function PricingSection() {
                     Health recommendations
                   </li>
                 </ul>
-        
+
               </div>
             </CardContent>
           </Card>
-          
+
           <Card className="bg-brand-peach border-2 border-brand-soft-green">
             <CardContent className="p-8">
               <div className="text-center">
@@ -66,13 +66,21 @@ export default function PricingSection() {
                     Health monitoring
                   </li>
                 </ul>
-          
+
               </div>
             </CardContent>
           </Card>
         </div>
-        
-        <div className="mt-12 text-center">
+
+        {/* New text for insurance/tax return - placed here */}
+        <div className="text-center mt-12 mb-12"> {/* Added margin-top and margin-bottom for spacing */}
+          <p className="text-lg text-gray-600">
+            We can provide a receipt for your insurance claims or annual tax return.
+          </p>
+        </div>
+        {/* End of new text */}
+
+        <div className="mt-12 text-center"> {/* This 'mt-12' might now be redundant with the mb-12 above, you can adjust as needed */}
           <div className="bg-brand-cream rounded-xl p-6 max-w-2xl mx-auto">
             <h4 className="text-lg font-semibold brand-dark-blue mb-4">Follow-up Schedule</h4>
             <div className="grid sm:grid-cols-3 gap-4 text-center">

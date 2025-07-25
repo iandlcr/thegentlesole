@@ -1,53 +1,46 @@
 import { Card, CardContent } from "./ui/card";
-import { Scissors, Hand, Heart, Sparkles, Search, UserCheck, Stethoscope, Info } from "lucide-react";
+import { Scissors, Hand, Heart, Sparkles, BriefcaseMedical, Stethoscope, Info, Footprints } from "lucide-react";
 
 const services = [
   {
-    icon: Search,
-    title: "Full Assessment",
-    description: "Comprehensive evaluation from below the knee to the foot, identifying potential issues and assessing overall foot condition.",
-    bgColor: "bg-brand-grey-blue",
+    icon: Footprints,
+    title: "Routine Footcare",
+    description: "Keep your feet happy and healthy with regular check-ups, cleaning, and preventative care to address minor issues before they become major problems.",
+    bgColor: "bg-brand-peach",
     iconColor: "text-white"
   },
   {
     icon: Scissors,
     title: "Nail Trimming & Filing",
-    description: "Professional nail care including precise trimming and filing to maintain healthy nail growth and prevent issues.",
+    description: "Precise and safe trimming and filing of toenails, ensuring proper length and shape to prevent discomfort and ingrown nails.",
     bgColor: "bg-brand-soft-green",
     iconColor: "text-white"
   },
   {
-    icon: Hand,
-    title: "Corn & Callus reduction",
-    description: "Safe removal and reduction of corns and calluses to relieve discomfort and prevent complications.",
+    icon: Sparkles,
+    title: "Corn & Callus Reduction",
+    description: "Gentle and effective removal of painful corns and calluses, restoring comfort and smoothing your skin.",
     bgColor: "bg-brand-coral",
     iconColor: "text-white"
   },
   {
     icon: Heart,
     title: "Diabetic Foot Care",
-    description: "Specialized care for diabetic patients focusing on prevention and early detection of foot complications.",
+    description: "Specialized and meticulous foot care for diabetic patients, focusing on preventing complications, monitoring foot health, and providing essential education.",
     bgColor: "bg-brand-peach",
     iconColor: "text-white"
   },
   {
-    icon: Sparkles,
-    title: "Moisturizing and Gentle Massage",
-    description: "Therapeutic moisturizing treatments and gentle massage to improve circulation and skin health.",
-    bgColor: "bg-brand-grey-blue",
-    iconColor: "text-white"
-  },
-  {
-    icon: UserCheck,
-    title: "Temporary Ingrown Removal",
-    description: "Professional temporary relief for ingrown toenails to reduce pain and prevent infection.",
+    icon: BriefcaseMedical,
+    title: "Fungal Nail Management",
+    description: "Assessment and care for fungal nail conditions, including advice on management and hygiene to improve nail health.", // New description
     bgColor: "bg-brand-soft-green",
     iconColor: "text-white"
   },
   {
     icon: Stethoscope,
-    title: "Referrals To Podiatrist",
-    description: "Professional referrals to podiatrists when specialized medical intervention is required for optimal foot health.",
+    title: "Health Teaching & Referrals",
+    description: "Empowering you with knowledge about proper foot health practices and providing professional referrals to specialists when advanced medical intervention is needed.",
     bgColor: "bg-brand-coral",
     iconColor: "text-white"
   }

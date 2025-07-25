@@ -272,12 +272,9 @@ export default function ContactSection() {
                               </SelectTrigger>
                             </FormControl>
                             <SelectContent>
-                              <SelectItem value="nail-trimming">Nail Trimming & Filing</SelectItem>
-                              <SelectItem value="corn-callus">Corn & Callus reduction</SelectItem>
-                              <SelectItem value="diabetic-care">Diabetic foot care</SelectItem>
-                              <SelectItem value="moisturizing-massage">Moisturizing and gentle massage</SelectItem>
-                              <SelectItem value="ingrown-removal">Temporary Ingrown Removal</SelectItem>
-                              <SelectItem value="general-consultation">General Consultation</SelectItem>
+                              <SelectItem value="routine-footcare">Routine Footcare</SelectItem>
+                              <SelectItem value="diabetic-footcare">Diabetic Footcare</SelectItem>
+                            
                             </SelectContent>
                           </Select>
                           <FormMessage />
