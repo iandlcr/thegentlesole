@@ -22,7 +22,7 @@ export default function SEOHead() {
         { "@type": "City", "name": "Essex" },
         { "@type": "City", "name": "Kingsville" },
         { "@type": "City", "name": "LaSalle" },
-        { "@type": "City", "name": "Tecumseh" }
+        { "@type": "City", "name": "Tecumseh" },
         { "@type": "City", "name": "Amherstburg" }
 
       ],
