@@ -53,7 +53,7 @@ const services = [
   }
 ];
 
-const serviceLocations = ["Windsor", "Essex", "Kingsville", "LaSalle", "Tecumseh"];
+const serviceLocations = ["Windsor", "Essex", "Kingsville", "LaSalle", "Tecumseh", "Amherstburg"];
 
 export default function ServicesSection() {
   return (
