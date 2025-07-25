@@ -16,7 +16,7 @@ export default function AboutSection() {
             <img 
               src="/attached_assets/footcare_nurse.jpg" 
               alt="Certified footcare nurse providing professional in-home care services" 
-              className="rounded-xl shadow-lg w-full" 
+              className="rounded-xl shadow-lg w-full max-w-md lg:max-w-none lg:w-3/4"
             />
           </div>
           <div>
