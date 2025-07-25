@@ -129,7 +129,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-semibold brand-dark-blue mb-1">Service Areas</h4>
-                  <p className="text-gray-600">Windsor, Essex, Kingsville, LaSalle, Tecumseh</p>
+                  <p className="text-gray-600">Windsor, Essex, Kingsville, LaSalle, Tecumseh, Amherstburg</p>
                 </div>
               </div>
               
