@@ -89,7 +89,7 @@ export default function ServicesSection() {
           <div className="bg-brand-grey-blue rounded-2xl p-8 max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold brand-dark-blue mb-4">Service Locations</h3>
             <p className="text-lg text-gray-700 mb-6">
-              We provide mobile footcare services throughout the Windsor-Essex region
+              We provide in-home footcare services throughout the Windsor-Essex region
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               {serviceLocations.map((location) => (
