@@ -37,10 +37,7 @@ export default function PricingSection() {
                     Health recommendations
                   </li>
                 </ul>
-                <p className="text-sm text-gray-600 flex items-center justify-center">
-                  <Shield className="brand-dark-blue mr-1" size={16} />
-                  With or without insurance
-                </p>
+        
               </div>
             </CardContent>
           </Card>
@@ -69,10 +66,7 @@ export default function PricingSection() {
                     Health monitoring
                   </li>
                 </ul>
-                <p className="text-sm text-gray-600 flex items-center justify-center">
-                  <Shield className="brand-dark-blue mr-1" size={16} />
-                  With or without insurance
-                </p>
+          
               </div>
             </CardContent>
           </Card>
