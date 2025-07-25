@@ -23,6 +23,8 @@ export default function SEOHead() {
         { "@type": "City", "name": "Kingsville" },
         { "@type": "City", "name": "LaSalle" },
         { "@type": "City", "name": "Tecumseh" }
+        { "@type": "City", "name": "Amherstburg" }
+
       ],
       "openingHours": "Mo-Fr 09:00-17:00",
       "contactPoint": {
