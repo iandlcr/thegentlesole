@@ -14,7 +14,7 @@ export default function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+              src="/attached_assets/footcare_nurse.jpg" 
               alt="Certified footcare nurse providing professional in-home care services" 
               className="rounded-xl shadow-lg w-full" 
             />
