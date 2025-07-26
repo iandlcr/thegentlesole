@@ -113,7 +113,7 @@ export default function Footer() {
                   </svg>
                 </a>
                 <a 
-                  href="https://www.facebook.com/profile.php?id=61578786505955" 
+                  href="https://www.facebook.com/thegentlesole" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-gray-300 hover:text-white transition-colors"
